@@ -1,0 +1,32 @@
+
+
+.filterArea{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    font-family: 'koulen', cursive;
+    letter-spacing: 3px;
+}
+
+
+.inputs{
+    font-family: 'koulen', cursive;
+    font-weight: 400;
+    background: #277DA1;
+    mix-blend-mode: multiply;
+    color: #F9C74F;
+}
+
+.button{
+    font-family: 'koulen', cursive;
+    font-weight: 400;
+    background: #277DA1;
+    mix-blend-mode: multiply;
+    color: #F9C74F;
+    margin: 7px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    
+}

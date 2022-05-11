@@ -1,5 +1,6 @@
 require('dotenv').config();
 const { Sequelize } = require('sequelize');
+const axios = require('axios')
 const fs = require('fs');
 const path = require('path');
 const {
@@ -30,10 +31,29 @@ sequelize.models = Object.fromEntries(capsEntries);
 
 // En sequelize.models están todos los modelos importados como propiedades
 // Para relacionarlos hacemos un destructuring
-const { Videogame } = sequelize.models;
+const { Videogame, Genre} = sequelize.models;
 
 // Aca vendrian las relaciones
 // Product.hasMany(Reviews);
+Videogame.belongsToMany(Genre,{
+through: 'Videogame_Genre',
+})
+
+Genre.belongsToMany(Videogame,{
+through: 'Videogame_Genre',
+})
+
+
+
+async function GetGenre(){
+      let genres = await axios.get('https://api.rawg.io/api/genres?key=37a523429b884004a04522127ae577ec')
+      let myGenres = genres.data.results.map(g=>g.name)
+      myGenres.forEach(g =>{
+        Genre.findOrCreate({where:{name:g}})
+      })               
+} 
+
+GetGenre()
 
 module.exports = {
   ...sequelize.models, // para poder importar los modelos así: const { Product, User } = require('./db.js');

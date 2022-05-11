@@ -1,0 +1,51 @@
+.background{
+    background:#F94144;
+    font-family: 'koulen', cursive;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-content:center;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.form2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-content:center;
+    justify-content: center;
+    align-content: space-around;
+    width: 600px;
+    border: 1px solid black;
+}
+
+
+.danger{
+    color: yellow;
+    border: solid 1px yellow;
+}
+
+
+.button{
+    font-family: 'koulen', cursive;
+    font-weight: 400;
+    background: #277DA1;
+    mix-blend-mode: multiply;
+    color: #F9C74F;
+    margin: 7px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    
+}
+
+.title{
+    font-family: 'koulen', cursive;
+    font-weight: 400;
+    background: #277DA1;
+    mix-blend-mode: multiply;
+    color: #F9C74F;
+}

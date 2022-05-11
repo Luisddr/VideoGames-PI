@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Macondo&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+
+html{
+    height: 100%;
+}
+
+body{
+    background-image: url('https://missingnumber.com.mx/wp-content/uploads/2018/06/SSBU-1.jpg');
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+.controler{
+    color: #F94144;
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+.title{
+    font-family: 'koulen', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F9C74F;
+    font-weight: 400;
+    font-size: 70px;
+    background: #000;
+    mix-blend-mode: multiply;
+}
+
+
+

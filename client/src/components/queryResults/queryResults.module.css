@@ -1,0 +1,55 @@
+.background{
+    background:#F94144;
+}
+
+.cardsContainer{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.title{
+    font-family: 'koulen', cursive;
+    font-weight: 400;
+    background: #277DA1;
+    mix-blend-mode: multiply;
+    color: #F9C74F;
+}
+
+.button{
+    font-family: 'koulen', cursive;
+    font-weight: 400;
+    background: #277DA1;
+    mix-blend-mode: multiply;
+    color: #F9C74F;
+    margin: 7px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    
+}
+
+.loading{    
+    border: 10px solid rgb(0, 0, 0);
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    border-left-color: transparent;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

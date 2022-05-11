@@ -1,0 +1,51 @@
+
+
+.backgroundHome{
+    background:#F94144;
+}
+
+.title{
+    font-family: 'koulen', cursive;
+    font-weight: 400;
+    background: #277DA1;
+    mix-blend-mode: multiply;
+    color: #F9C74F;
+}
+
+.cardsContainer{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.loading{    
+    border: 10px solid rgb(0, 0, 0);
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    border-left-color: transparent;
+    
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.buttons{
+    background-color:transparent;
+    color: #F9C74F;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
